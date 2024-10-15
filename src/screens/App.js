@@ -4,6 +4,40 @@ import { Breadcrumb, Layout, Menu, theme, Avatar, Space } from 'antd';
 import { useNavigate, Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import SignIn from './Sign-In-Screen'; // Importa el componente de SignIn
 
+
+
+
+
+
+
+
+
+
+
+
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDHbHj4i1H_EHKbIM0OtLTbL-XSNy9osSs",
+  authDomain: "acme-22e50.firebaseapp.com",
+  projectId: "acme-22e50",
+  storageBucket: "acme-22e50.appspot.com",
+  messagingSenderId: "1097815768281",
+  appId: "1:1097815768281:web:5e4faa82e26d233ea052c8",
+  measurementId: "G-RCCBE3W23K"
+};
+
+// Inicializa Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+
+
+
+
 const { Header, Content, Footer, Sider } = Layout;
 
 const items1 = ['1', '2', '3'].map((key) => ({
@@ -56,11 +90,7 @@ const App = () => {
         />
       </Header>
       <Content style={{ padding: '0 48px' }}>
-        <Breadcrumb style={{ margin: '16px 0' }}>
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item>
-        </Breadcrumb>
+       
         <Layout
           style={{
             padding: '24px 0',

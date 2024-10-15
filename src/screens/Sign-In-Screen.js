@@ -1,14 +1,11 @@
 import * as React from 'react';
 import { AppProvider, SignInPage } from '@toolpad/core';
 import { useTheme } from '@mui/material/styles';
-// preview-start
+import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
+
 const providers = [
-
   { id: 'google', name: 'Google' },
-
 ];
-
-// preview-end
 
 const SignIn = async (provider) => {
   const promise = new Promise((resolve) => {
@@ -22,11 +19,22 @@ const SignIn = async (provider) => {
 
 export default function OAuthSignInPage() {
   const theme = useTheme();
+
   return (
-    // preview-start
-    <AppProvider theme={theme}>
-      <SignInPage SignIn={SignIn} providers={providers} />
-    </AppProvider>
-    // preview-end
+    <GoogleOAuthProvider clientId="877714190227-ld0qq1ufpebnsq7bg10tf6r6cmtnm4qi.apps.googleusercontent.com">
+      <AppProvider theme={theme}>
+        <SignInPage SignIn={SignIn} providers={providers} />
+        <div style={{ marginTop: '20px', textAlign: 'center' }}>
+          <GoogleLogin
+            onSuccess={(credentialResponse) => {
+              console.log(credentialResponse);
+            }}
+            onError={() => {
+              console.log('Login Failed');
+            }}
+          />
+        </div>
+      </AppProvider>
+    </GoogleOAuthProvider>
   );
 }
