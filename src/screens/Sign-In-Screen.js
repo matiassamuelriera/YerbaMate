@@ -10,7 +10,7 @@ const providers = [
 
 // preview-end
 
-const signIn = async (provider) => {
+const SignIn = async (provider) => {
   const promise = new Promise((resolve) => {
     setTimeout(() => {
       console.log(`Sign in with ${provider.id}`);
@@ -25,7 +25,7 @@ export default function OAuthSignInPage() {
   return (
     // preview-start
     <AppProvider theme={theme}>
-      <SignInPage signIn={signIn} providers={providers} />
+      <SignInPage SignIn={SignIn} providers={providers} />
     </AppProvider>
     // preview-end
   );
