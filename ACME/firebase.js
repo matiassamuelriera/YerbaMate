@@ -2,8 +2,8 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { getAnalytics } from 'firebase/analytics'; // Import getAnalytics
-import { auth, provider } from './firebaseConfig';
-import { signInWithPopup } from 'firebase/auth';
+
+
 
 // Your web app's Firebase configuration
 const firebaseConfig = {

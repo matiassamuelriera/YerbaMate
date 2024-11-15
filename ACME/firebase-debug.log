@@ -1,0 +1,31 @@
+[debug] [2024-11-15T04:51:59.251Z] ----------------------------------------------------------------------
+[debug] [2024-11-15T04:51:59.254Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\matia\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions --debug
+[debug] [2024-11-15T04:51:59.254Z] CLI Version:   13.25.0
+[debug] [2024-11-15T04:51:59.254Z] Platform:      win32
+[debug] [2024-11-15T04:51:59.254Z] Node Version:  v20.18.0
+[debug] [2024-11-15T04:51:59.254Z] Time:          Fri Nov 15 2024 01:51:59 GMT-0300 (hora estándar de Argentina)
+[debug] [2024-11-15T04:51:59.254Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-15T04:51:59.313Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-15T04:51:59.314Z] > authorizing via signed-in user (matias.rivera.samuel@gmail.com)
+[debug] [2024-11-15T04:51:59.315Z] [iam] checking project acme-13937 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-11-15T04:51:59.316Z] Checked if tokens are valid: true, expires at: 1731649474062
+[debug] [2024-11-15T04:51:59.317Z] Checked if tokens are valid: true, expires at: 1731649474062
+[debug] [2024-11-15T04:51:59.318Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/acme-13937:testIamPermissions [none]
+[debug] [2024-11-15T04:51:59.318Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/acme-13937:testIamPermissions x-goog-quota-user=projects/acme-13937
+[debug] [2024-11-15T04:51:59.318Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/acme-13937:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-11-15T04:52:00.593Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/acme-13937:testIamPermissions 200
+[debug] [2024-11-15T04:52:00.594Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/acme-13937:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-11-15T04:52:00.595Z] Checked if tokens are valid: true, expires at: 1731649474062
+[debug] [2024-11-15T04:52:00.595Z] Checked if tokens are valid: true, expires at: 1731649474062
+[debug] [2024-11-15T04:52:00.596Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/acme-13937/serviceAccounts/acme-13937@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-11-15T04:52:00.596Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/acme-13937/serviceAccounts/acme-13937@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-11-15T04:52:01.852Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/acme-13937/serviceAccounts/acme-13937@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-11-15T04:52:01.853Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/acme-13937/serviceAccounts/acme-13937@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'acme-13937'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[error] 
+[error] Error: functions predeploy error: Command terminated with non-zero exit code 1

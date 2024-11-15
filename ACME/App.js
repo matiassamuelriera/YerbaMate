@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom';
 import Inicio from './inicio';
 import SignInScreen from './login';
-import { auth, provider } from './firebaseConfig';
+
 import { signInWithPopup } from 'firebase/auth';
 
 function App() {

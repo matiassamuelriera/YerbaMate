@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { auth, provider } from './firebaseConfig';
+
 import { signInWithPopup } from 'firebase/auth';
 
 function Inicio({ setIsAuthenticated }) {

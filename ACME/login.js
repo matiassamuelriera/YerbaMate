@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { auth, googleProvider, signInWithPopup } from './firebase';
-import { provider } from './firebaseConfig';
+
 
 
 function SignInScreen({ setIsAuthenticated }) {
