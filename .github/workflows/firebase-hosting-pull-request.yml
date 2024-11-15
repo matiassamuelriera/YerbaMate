@@ -17,5 +17,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ACME_FAE10 }}
-          projectId: acme-fae10
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ACME_13937 }}
+          projectId: acme-13937
