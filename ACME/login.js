@@ -6,7 +6,7 @@ function SignInScreen({ setIsAuthenticated }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
-
+//a
   // Manejar inicio de sesión con Google
   const handleGoogleSignIn = async () => {
     try {
