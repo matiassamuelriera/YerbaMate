@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - App de Certificados Médicos</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f7;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Estilo del encabezado */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 30px;
+            display: flex; /* Añadido para alinear los elementos en fila */
+            align-items: center; /* Centra verticalmente los elementos */
+            justify-content: space-between; /* Espacia los elementos */
+        }
+
+        /* Estilo del botón de usuario */
+        .user-btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .user-btn2 {
+            background-color: #a1fea1;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .user-btn:hover {
+            background-color: #555;
+        }
+
+        /* Estilo principal del contenido */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin: 0; /* Elimina margen para evitar un espacio innecesario */
+        }
+
+        p {
+            color: #666;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con botón de usuario y título "inicio" alineados -->
+    <header>
+        <h1>Inicio</h1>
+        <a href="#" class="user-btn">Usuario</a>
+       
+    </header>
+
+    <!-- Contenido principal -->
+    <div style="text-align: center; padding : 150px 0; position: relative; bottom: 0; width: 100%; background-color: #ffffff;">
+        <h2>Alumno</h2>
+        <a href="#" class="user-btn2">Subir certificado</a>
+        <br/><br/><br/>
+        <a href="#" class="user-btn2">Usuario</a>
+        <br/><br/><br/>
+        <a href="#" class="user-btn2">Usuario</a>
+    </div>
+
+    <!-- Pie de página con información de la empresa -->
+    <footer>
+        <p>&copy; 2024 ACME S.A.</p>
+        <p>Para más información, visita <a href="https://www.certificadosmedicos.com" target="_blank">nuestro sitio web</a></p>
+    </footer>
+
+</body>
+</html>
