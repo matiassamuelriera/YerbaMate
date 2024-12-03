@@ -7,19 +7,19 @@ import { getAnalytics } from 'firebase/analytics'; // Import getAnalytics
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBdEw1e33g-XNqbVQUqNMhU3s3m88yxJ6E",
-  authDomain: "acme-13937.firebaseapp.com",
-  projectId: "acme-13937",
-  storageBucket: "acme-13937.appspot.com", // Corrected storageBucket format
-  messagingSenderId: "11200021979",
-  appId: "1:11200021979:web:ad72b05e951414726413fe",
-  measurementId: "G-YG3TN10VNK"
+  apiKey: "AIzaSyDHbHj4i1H_EHKbIM0OtLTbL-XSNy9osSs",
+  authDomain: "acme-22e50.firebaseapp.com",
+  projectId: "acme-22e50",
+  storageBucket: "acme-22e50.firebasestorage.app",
+  messagingSenderId: "1097815768281",
+  appId: "1:1097815768281:web:5e4faa82e26d233ea052c8",
+  measurementId: "G-RCCBE3W23K"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app); // Initialize analytics
 const auth = getAuth(app);
-const provider = new GoogleAuthProvider();
 
-export { app, auth, provider, analytics };
+const googleProvider = new GoogleAuthProvider();
+export { app, auth, googleProvider, analytics, signInWithPopup };

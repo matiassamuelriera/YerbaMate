@@ -6,7 +6,7 @@ import { signInWithPopup } from 'firebase/auth';
 function Inicio({ setIsAuthenticated }) {
   const navigate = useNavigate();
   const handleCertificadoClick = () => {
-    window.open('https://forms.gle/DTV9buVDvqqtBCpH7', '_blank');
+    window.open('https://forms.gle/SpSRYFAb34QPk6os8', '_blank');
   };
   const handleLogout = () => {
     localStorage.removeItem('isAuthenticated');
